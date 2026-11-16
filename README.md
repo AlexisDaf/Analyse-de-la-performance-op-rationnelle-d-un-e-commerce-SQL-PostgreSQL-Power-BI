@@ -67,33 +67,3 @@ Source : **Brazilian E-Commerce Public Dataset by Olist**
 
 **Alexis Da Fonseca**  
 Projet Data Analytics & BI
-
-## Organisation du dépôt
-
-```text
-.
-├── README.md
-├── .gitignore
-├── sql/           # Script SQL et vues analytiques
-├── powerbi/       # Dashboard Power BI Desktop
-├── reports/       # Rapport PDF existant
-└── data/
-    └── raw/       # Données locales non versionnées
-```
-
-### Livrables
-
-- [olist_analysis.sql](sql/olist_analysis.sql)
-- [Analyse performance opérationnelle Olist.pbix](powerbi/Analyse%20performance%20op%C3%A9rationnelle%20Olist.pbix)
-- [Analyse des performances opérationnelles du dataset Olist.pdf](reports/Analyse%20des%20performances%20op%C3%A9rationnelles%20du%20dataset%20Olist.pdf)
-
-## Exécution locale
-
-Les données sources ne sont pas incluses. Voir [data/raw/README.md](data/raw/README.md) pour les fichiers attendus et la provenance disponible.
-
-1. Installer PostgreSQL et créer une base locale dédiée à Olist.
-2. Télécharger les CSV puis les importer avec pgAdmin dans les tables `customers`, `orders`, `order_items`, `products`, `sellers`, `order_reviews` et `product_category_name_translation`. Les noms de colonnes doivent correspondre aux en-têtes CSV ; utiliser des types numériques pour prix et scores et des types timestamp pour les dates.
-3. Exécuter `sql/olist_analysis.sql` de haut en bas dans cette base. Le script contient des contrôles, des créations de vues et des requêtes exploratoires. Il suppose les tables déjà importées et n'est pas idempotent : les vues doivent être absentes à la première exécution. Le dépôt initial ne fournit pas de DDL ni de procédure d'import automatisée.
-4. Ouvrir le `.pbix` dans Power BI Desktop, adapter ses paramètres de connexion PostgreSQL (serveur et base), puis actualiser. Les connexions internes du fichier binaire doivent être vérifiées dans Power BI Desktop.
-
-Le script SQL a été conservé sans modification de ses calculs. Aucun fichier de dépendances Python n'est nécessaire.
