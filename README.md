@@ -49,6 +49,17 @@ Principaux KPI suivis :
 - Late Delivery Rate
 - Average Review Score
 
+## Résultats clés
+
+Sur **99 441 commandes** (dont 96 470 livrées) :
+
+- **Délai moyen de livraison : 12 jours**, pour un **taux de retard de 8,1 %** par rapport à la date de livraison estimée annoncée au client.
+- **Le retard fait chuter la satisfaction** : les commandes livrées en retard obtiennent une note moyenne de **2,57 / 5**, contre **4,29 / 5** pour les commandes livrées à temps (**−1,7 point**).
+- **Plus de la moitié (54 %) des commandes en retard reçoivent une note de 1 ou 2**, contre 9 % des commandes livrées à temps.
+- **L'effet s'aggrave avec la durée du retard** : 3,29 / 5 pour 1 à 3 jours de retard, 2,11 pour 4 à 7 jours, 1,70 au-delà de 8 jours.
+
+**Enseignement métier** : la ponctualité de livraison est un levier majeur de la satisfaction client ; le suivi du taux de retard par vendeur et par catégorie permet de cibler les actions correctives.
+
 ## Principaux axes d’analyse
 
 L’analyse permet notamment d’identifier :
